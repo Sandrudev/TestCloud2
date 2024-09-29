@@ -65,7 +65,7 @@ def main():
             token = generate_token()
             with open('generated_tokens.txt', 'a') as f:  # Keep track of generated tokens (optional)
                 f.write(f"{token}\n")
-            bot.send_message(chat_id=CHANNEL_ID, text=f"New Token: {token}")
+            bot.send_message(chat_id=CHANNEL_ID, text=f"{token}")
             st.success(f"Registration successful! Your token is: {token}")
 
     # After login, show the dashboard
